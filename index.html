@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معین | فخر موسیقی ایران</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معین | صدای جاودان عشق</title>
+  <meta name="description" content="سایت طرفداران استاد معین — بیوگرافی، اجراهای زنده یوتیوب و آهنگ‌های ماندگار در اسپاتیفای." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="canvas"></div>
+  <canvas id="gold-field" aria-hidden="true"></canvas>
+  <div class="vignette"></div>
 
+  <header class="nav">
+    <a class="brand" href="#top">معین</a>
     <nav>
-        <div class="logo">معین</div>
-        <ul>
-            <li><a href="#bio">بیوگرافی</a></li>
-            <li><a href="#albums">آلبوم‌ها</a></li>
-            <li><a href="#concerts">اجراهای زنده</a></li>
-            <li><a href="#songs">آهنگ‌ها</a></li>
-        </ul>
+      <a href="#bio">بیوگرافی</a>
+      <a href="#gallery">گالری</a>
+      <a href="#live">اجراهای زنده</a>
+      <a href="#songs">آهنگ‌ها</a>
+      <a href="#albums">آلبوم‌ها</a>
     </nav>
+    <a class="yt-chip" href="https://www.youtube.com/@moeinofficialchannel" target="_blank" rel="noopener">کانال رسمی</a>
+  </header>
 
-    <section id="hero">
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">فخر موسیقی ایران</p>
         <h1>معین</h1>
-        <p>فخر موسیقی ایران</p>
-        <div class="hero-stats">
-            <div>۱۲۰۰+ اجرای زنده</div>
-            <div>۱۵ میلیون بازدید یوتیوب</div>
-            <div>طلا و جوایز</div>
+        <p class="tagline">صدای جاودان عشق</p>
+        <p class="lead">نصرالله معین نجف‌آبادی · ۲۹ دی ۱۳۳۰ · نجف‌آباد، اصفهان</p>
+        <div class="cta-row">
+          <a class="btn gold" href="#live">تماشای کنسرت‌ها</a>
+          <a class="btn ghost" href="#songs">گوش دادن در اسپاتیفای</a>
         </div>
-    </section>
-
-    <section id="bio">
-        <h2>بیوگرافی</h2>
-        <p>معین فخر، ترانه‌سرای افسانه‌ای و فخر موسیقی ایران... از سکه و یار تا کلنل و همه آلبوم‌های حماسی...</p>
-    </section>
-
-    <section id="albums">
-        <h2>آلبوم‌های ماندگار</h2>
-        <div class="album-grid">
-            <div class="album-card">سکه (۱۹۸۸)</div>
-            <div class="album-card">یار (۱۹۹۲)</div>
-            <div class="album-card">کلنل (۲۰۰۷)</div>
-            <div class="album-card">معین (۲۰۱۵)</div>
-        </div>
-    </section>
-
-    <section id="concerts">
-        <h2>اجراهای زنده (کلیک کن و ببین)</h2>
-        <div class="concert-list">
-            <a href="https://www.youtube.com/@MoeinOfficialChannel" target="_blank" class="concert-btn">کانال رسمی یوتیوب (همه اجراها + کنسرت‌های زنده)</a>
-            <a href="https://www.youtube.com/watch?v=KLvl2OJ6MB0" target="_blank" class="concert-btn">یلدا ۲۰۲۵</a>
-            <a href="https://www.youtube.com/watch?v=tMsqv6YIoPs" target="_blank" class="concert-btn">یلدا ۲۰۲۵ پارت ۱</a>
-            <a href="https://www.youtube.com/watch?v=rDCxZhTRb7I" target="_blank" class="concert-btn">لندن ۲۰۲۵</a>
-            <a href="https://www.youtube.com/watch?v=-DEAV5UMlD0" target="_blank" class="concert-btn">لندن ۲۰۲۵</a>
-        </div>
-    </section>
-
-    <section id="songs">
-        <h2>آهنگ‌های ابدی</h2>
-        <ul>
-            <li>سکه</li>
-            <li>یار</li>
-            <li>کلنل</li>
-            <li>مهیار</li>
-            <li>و غیره...</li>
+        <ul class="stats">
+          <li><strong>۲۶+</strong><span>آلبوم رسمی</span></li>
+          <li><strong>۵۰+</strong><span>سال فعالیت</span></li>
+          <li><strong>۳۴۱K</strong><span>دنبال‌کننده یوتیوب</span></li>
         </ul>
+      </div>
+      <figure class="hero-photo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Moein_Live_in_London_-_%282025%29.jpg" alt="معین در کنسرت لندن ۲۰۲۵" width="960" height="720" />
+        <figcaption>کنسرت لندن · ۲۰۲۵</figcaption>
+      </figure>
     </section>
 
-    <script src="script.js"></script>
+    <section id="bio" class="panel">
+      <div class="section-head"><span>درباره استاد</span><h2>بیوگرافی</h2></div>
+      <div class="bio-grid">
+        <article class="glass">
+          <p><strong>نصرالله معین نجف‌آبادی</strong> معروف به معین، خواننده موسیقی پاپ و سنتی ایران است. از نوجوانی در رادیو اصفهان و هتل عباسی خواند و شاگرد اساتیدی چون تاج اصفهانی و حسن کسایی بود.</p>
+          <p>نخستین ترانه رسمی‌اش «یکی را دوست می‌دارم» در سال ۱۳۵۷ منتشر شد و یک شبه او را به شهرت رساند. پس از انقلاب به آمریکا مهاجرت کرد و از لس‌آنجلس با آلبوم «می‌پرستم» مسیر حرفه‌ای خود را ادامه داد.</p>
+          <p>آثار ماندگاری چون کعبه، سفر، پریچه، طناز و همدم، او را به لقب «صدای جاودان عشق» رسانده‌اند. کنسرت‌هایش در لندن، دبی، تورنتو و لس‌آنجلس همیشه سولدآوت است.</p>
+        </article>
+        <blockquote class="quote glass"><p>بدون طرفدارانم هیچم.</p><cite>— معین</cite></blockquote>
+      </div>
+    </section>
+
+    <section id="gallery" class="panel">
+      <div class="section-head"><span>صحنه</span><h2>گالری کنسرت</h2></div>
+      <div class="gallery">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Moein_Live_in_Toronto_2023.jpg" alt="معین در تورنتو ۲۰۲۳" /><figcaption>تورنتو ۲۰۲۳</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Moein_-_Persian_pop_singer_-_Amsterdam_Concertgebouw_2015.jpg" alt="معین در آمستردام ۲۰۱۵" /><figcaption>آمستردام ۲۰۱۵</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Moin_Kuala_Lumpur_Malaysia_2009.jpg" alt="معین در کوالالامپور ۲۰۰۹" /><figcaption>کوالالامپور ۲۰۰۹</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Moein_live_in_germany_2014.png" alt="معین در آلمان ۲۰۱۴" /><figcaption>آلمان ۲۰۱۴</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="live" class="panel">
+      <div class="section-head"><span>کانال رسمی یوتیوب</span><h2>اجراهای زنده</h2></div>
+      <div class="player-stage glass">
+        <div class="frame">
+          <iframe id="yt-player" src="https://www.youtube-nocookie.com/embed/dWl5Wiq49S4?rel=0" title="اجرای زنده معین" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="playlist" id="playlist"></div>
+      </div>
+      <p class="center-link"><a class="btn gold" href="https://www.youtube.com/@moeinofficialchannel" target="_blank" rel="noopener">همه ویدیوها در یوتیوب</a></p>
+    </section>
+
+    <section id="songs" class="panel">
+      <div class="section-head"><span>گلچین</span><h2>آهنگ‌های ماندگار</h2></div>
+      <div class="song-list" id="songs-list"></div>
+      <div class="spotify glass">
+        <h3>پخش در اسپاتیفای</h3>
+        <iframe style="border-radius:16px" src="https://open.spotify.com/embed/artist/5WCHc16VvzVCmBKH70CYfw?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Moein on Spotify"></iframe>
+      </div>
+    </section>
+
+    <section id="albums" class="panel">
+      <div class="section-head"><span>دیسکوگرافی</span><h2>آلبوم‌های رسمی</h2></div>
+      <div class="albums" id="albums-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>سایت طرفداران · وابسته به استاد معین نیست</p>
+    <p>عکس‌ها از Wikimedia Commons · ویدیوها از کانال رسمی یوتیوب</p>
+    <p class="gold-text">برای صدای جاودان عشق</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
