@@ -1,0 +1,19 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Vazir', sans-serif; overflow-x:hidden; color:#ffd700; }
+canvas { position:absolute; top:0; left:0; z-index:1; width:100%; height:100%; }
+
+nav { position:fixed; top:0; width:100%; background:rgba(0,0,0,0.8); z-index:100; padding:15px; display:flex; justify-content:space-between; align-items:center; }
+.logo { color:#ffd700; font-size:2.5rem; font-weight:bold; text-shadow:0 0 30px #ffd700; }
+
+section { min-height:100vh; padding:100px 20px; text-align:center; }
+#hero { height:100vh; display:flex; align-items:center; justify-content:center; flex-direction:column; background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)); }
+#hero h1 { font-size:9rem; margin:0; text-shadow:0 0 50px #ffd700; }
+#hero p { font-size:3rem; margin:10px 0; }
+
+.concert-list { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:50px; }
+.concert-btn { padding:20px 50px; background:#ffd700; color:#000; text-decoration:none; border-radius:50px; font-size:1.3rem; transition:0.4s; }
+.concert-btn:hover { transform:scale(1.15); background:#fff; box-shadow:0 0 40px #ffd700; }
+
+.album-grid { display:flex; gap:40px; flex-wrap:wrap; justify-content:center; margin-top:50px; }
+.album-card { background:rgba(255,255,255,0.1); padding:40px 30px; border-radius:25px; border:3px solid #ffd700; width:280px; transition:0.5s; }
+.album-card:hover { transform:scale(1.1); box-shadow:0 0 60px #ffd700; }
